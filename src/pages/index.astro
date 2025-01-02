@@ -1,14 +1,11 @@
 ---
+import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 ---
 
 <html lang="en" class="dark">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>George's Website</title>
+    <BaseHead title="George's Website" description="George's Website" />
   </head>
   <body class="dark bg-black text-white">
     <Header />
