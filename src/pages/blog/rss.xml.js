@@ -7,7 +7,7 @@ let converter = new showdown.Converter();
 export async function GET(context) {
   const posts = await getCollection("blog");
   return rss({
-    title: `Blog - ${SITE_TITLE}`,
+    title: `Blog - George's Website`,
     description: "George's blog. I'll occasionally post on here if I want to.",
     site: context.site,
     items: await Promise.all(
