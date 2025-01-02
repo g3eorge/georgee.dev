@@ -1,0 +1,37 @@
+---
+import Header from "../../components/Header.astro";
+---
+
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>George's Projects</title>
+  </head>
+  <body class="dark bg-black text-white">
+    <Header />
+    <article class="mt-20 text-left max-w-xl mx-auto p-6">
+      <h1 class="text-4xl font-bold">Projects</h1>
+      <br />
+      <ul class="text-lg" style="list-style-type: disc;">
+        <li>
+          <a href="https://github.com/thingbomb/flowtide">Flowtide</a> - a beautiful
+          new tab
+        </li>
+        <li>
+          <a href="https://github.com/thingbomb/noisefill">Noisefill</a> - listen
+          to calming soundscapes
+        </li>
+        <li>
+          <a href="https://github.com/thingbomb/feedbomb">Feedbomb</a> - an RSS reader
+        </li>
+        <li>
+          <a href="https://github.com/thingbomb/omnos">Omnos</a> - a tiny JS library
+          for utility
+        </li>
+      </ul>
+    </article>
+  </body>
+</html>

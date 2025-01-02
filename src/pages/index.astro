@@ -1,0 +1,34 @@
+---
+import Header from "../components/Header.astro";
+---
+
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>George's Website</title>
+  </head>
+  <body class="dark bg-black text-white">
+    <Header />
+    <article class="mt-20 text-left max-w-xl mx-auto p-6">
+      <h1 class="text-4xl font-bold">Hi, I'm George</h1>
+      <br />
+      <p class="text-lg">
+        I am an open-source developer who loves to build things for the web. I
+        maintain a couple of open-source projects, including <a
+          href="https://github.com/thingbomb/flowtide">Flowtide</a
+        >, <a href="https://github.com/thingbomb/noisefill">Noisefill</a>, and <a
+          href="https://github.com/thingbomb/omnos">omnos</a
+        >.<br /><br />
+        I enjoy building in JavaScript and React, but lately I've been getting into
+        TypeScript and Solid, which are far superior.<br /><br />
+        As for this website, I'll occasionally post on here as either a blog post
+        or <a href="/things" class="text-purple-400 hover:underline"
+          >some thing I built.</a
+        >
+      </p>
+    </article>
+  </body>
+</html>
