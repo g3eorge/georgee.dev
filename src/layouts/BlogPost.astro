@@ -48,23 +48,52 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       .last-updated-on {
         font-style: italic;
       }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        margin-top: 10px;
-        margin-bottom: 6px;
-      }
-      hr,
-      hr:before,
-      hr:after {
-        border-color: #3c3c3c;
-      }
-      img {
-        border-radius: 12px;
-      }
+article {
+  h1 {
+    @apply mb-3 mt-6 text-4xl font-bold;
+  }
+
+  h2 {
+    @apply mb-3 mt-5 text-3xl font-bold;
+  }
+
+  h3 {
+    @apply mb-3 mt-6 text-2xl font-bold;
+  }
+
+  h4 {
+    @apply mb-3 mt-6 text-xl font-bold;
+  }
+
+  h5 {
+    @apply mb-3 mt-6 text-lg font-bold;
+  }
+
+  h6 {
+    @apply mb-3 mt-6 text-base font-bold;
+  }
+
+  p {
+    @apply mb-4;
+  }
+
+  img {
+    border-radius: 12px;
+  }
+
+  a {
+    @apply text-blue-300;
+  }
+
+  a:hover {
+    @apply underline;
+  }
+
+  ol {
+    @apply list-decimal pl-4;
+  }
+}
+
     </style>
   </head>
 
